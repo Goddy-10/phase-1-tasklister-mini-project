@@ -27,9 +27,12 @@ myForm.addEventListener("submit", (event) => {
   let deletemyText = document.createTextNode("  X");
   handleDeleteButton.appendChild(deletemyText);
   lists.appendChild(handleDeleteButton);
+  
 
   let initiateDelete = document.getElementsByClassName("deleteButton");
   initiateDelete = Array.from(initiateDelete);
+
+
 
   initiateDelete.forEach((button) => {
     button.addEventListener("click", function () {
